@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>Jillion Technologies</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+
+        body {
+        font-family: 'Poppins', sans-serif;
+        color: #333;
+        }
+
+        h1, h2, h5 {
+        font-weight: 600;
+        }
+
+        p, li, a {
+        font-weight: 400;
+        font-size: 1.1rem;
+        }
+
+        a {
+        text-decoration: none;
+        }
+
+        a:hover {
+        text-decoration: underline;
+        }
+
+        .navbar-brand, .nav-link {
+             font-size: 1.2rem;
+        }
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+        }
+        .testimonial-img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.5s, transform 0.5s;
+        }
+        .animate-on-scroll.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .lottie-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 300px;
+        }
+        .feature-image{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            margin-bottom: 1rem;
+        }
+
+        #features .card {
+        transition: transform 0.3s ease-in-out;
+    }
+    #features .card:hover {
+        transform: translateY(-10px);
+    }
+    .feature-image {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .feature-image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Jillion Technologies</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 animate__animated animate__fadeInLeft">
+                    <h1 class="display-4 text-primary">WE MAKE YOUR IDEA'S INTO REALITY</h1>
+                    <p class="lead">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <button class="btn btn-primary me-2">Get Started</button>
+                    <button class="btn btn-outline-primary">Contact Us</button>
+                </div>
+                <div class="col-lg-6 animate__animated animate__fadeInRight">
+                    <img src="/Programming-cuate.png" alt="Hero Illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-5">Features</h2>
+        <div class="row">
+            <div class="col-lg-4 mb-4 animate-on-scroll">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="feature-image mb-3">
+                            <img src="/undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_users_per_minute_1e4q_t22j_-1-_0ngf_-1-_27dv_30ul_legv_-1-_il1l_(2)_0jip.png" alt="Feature 1" class="img-fluid">
+                        </div>
+                        <h5 class="card-title">User Management</h5>
+                        <p class="card-text flex-grow-1">Efficiently manage user accounts and permissions with our advanced user management system.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 animate-on-scroll">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="feature-image mb-3">
+                            <img src="/undraw search engine.png" alt="Feature 2" class="img-fluid">
+                        </div>
+                        <h5 class="card-title">Smart Search</h5>
+                        <p class="card-text flex-grow-1">Powerful search functionality to help users find exactly what they're looking for quickly and easily.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 mb-4 animate-on-scroll">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="card-body d-flex flex-column">
+                        <div class="feature-image mb-3">
+                            <img src="/undraw_Visionary_technology_re_jfp7.png" alt="Feature 3" class="img-fluid">
+                        </div>
+                        <h5 class="card-title">Visionary Technology</h5>
+                        <p class="card-text flex-grow-1">Stay ahead of the curve with our cutting-edge technological solutions and innovative features.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Products Section -->
+    <section id="products" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Products</h2>
+            <div class="row">
+                <div class="col-lg-4 mb-4 animate-on-scroll">
+                    <div class="lottie-container">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+      <dotlottie-player src="https://lottie.host/908ee4a3-ff25-460a-8363-961796d6e17b/LmzlIJf9hE.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                        <div class="card-body">
+                            <h5 class="card-title">Data Analytics</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 animate-on-scroll">
+                    <div class="lottie-container">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+    <dotlottie-player src="https://lottie.host/13b8bdf4-622a-4ddd-a5e6-ba21cc564390/uKrfonBVpu.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                        <div class="card-body">
+                            <h5 class="card-title">UI/UX Design</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 animate-on-scroll">
+                    <div class="lottie-container">
+                        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+                        <dotlottie-player src="https://lottie.host/4f8cbd5b-5d75-4e07-8761-d04a2d2336dc/WR5DQNuIF6.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                        <div class="card-body">
+                            <h5 class="card-title">Marketing Services</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Testimonials</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="/man-portrait-posing-loft-modern-space.jpg" class="testimonial-img" alt="Testimonial 1">
+                            <p class="lead mb-0">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas.</p>
+                            <footer class="blockquote-footer mt-3">
+                                <cite title="Source Title">John Doe, CEO</cite>
+                            </footer>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex flex-column align-items-center text-center">
+                            <img src="/happy-successful-red-haired-businesswoman-wearing-formal-suit-standing-with-arms-folded-smiling.jpg" class="testimonial-img" alt="Testimonial 2">
+                            <p class="lead mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis.</p>
+                            <footer class="blockquote-footer mt-3">
+                                <cite title="Source Title">Jane Smith, CTO</cite>
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 animate-on-scroll">
+                    <h2 class="mb-4">Contact Us</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" placeholder="Email address" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control" rows="5" placeholder="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                <div class="col-lg-6 animate-on-scroll">
+                    <dotlottie-player src="https://lottie.host/3d10ecb1-8391-4800-9ca3-2305749479b3/Zp1ivcV0Hw.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h5>Contact Us</h5>
+                    <p>Email: contact@jilliontechnologies.com<br>Phone: 123456789</p>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h5>Company</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">About Us</a></li>
+                        <li><a href="#" class="text-white">Services</a></li>
+                        <li><a href="#" class="text-white">Career</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-3 mb-md-0">
+                    <h5>Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Web Development</a></li>
+                        <li><a href="#" class="text-white">Mobile App Development</a></li>
+                        <li><a href="#" class="text-white">E-commerce Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white">Contact</a></li>
+                        <li><a href="#" class="text-white">Terms & Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Animation on scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            elements.forEach(element => {
+                const rect = element.getBoundingClientRect();
+                const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+                if (rect.top <= windowHeight * 0.75) {
+                    element.classList.add('show');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+    </script>
+</body>
+</html>
